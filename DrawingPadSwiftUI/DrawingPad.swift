@@ -13,6 +13,7 @@ struct DrawingPad: View {
     @Binding var drawings: [Drawing]
     @Binding var color: Color
     @Binding var lineWidth: CGFloat
+    @Binding var drawMode: DrawMode
     
     var body: some View {
         GeometryReader { geometry in
@@ -27,6 +28,9 @@ struct DrawingPad: View {
                 .gesture(
                     DragGesture(minimumDistance: 0.1)
                         .onChanged({ (value) in
+                            if self.currentDrawing.drawMode != self.drawMode {
+                                self.currentDrawing.drawMode = drawMode
+                            }
                             let currentPoint = value.location
                             if currentPoint.y >= 0
                                 && currentPoint.y < geometry.size.height {
@@ -45,9 +49,22 @@ struct DrawingPad: View {
     private func add(drawing: Drawing, toPath path: inout Path) {
         let points = drawing.points
         if points.count > 1 {
-            for i in 0..<points.count-1 {
-                let current = points[i]
-                let next = points[i+1]
+            switch drawing.drawMode {
+            case .freeStyle:
+                for i in 0..<points.count-1 {
+                    let current = points[i]
+                    let next = points[i+1]
+                    path.move(to: current)
+                    path.addLine(to: next)
+                }
+            case .line:
+                let current = points[0]
+                let next = points.last!
+                path.move(to: current)
+                path.addLine(to: next)
+            case .rectangle:
+                let current = points[0]
+                let next = points.last!
                 path.move(to: current)
                 path.addLine(to: next)
             }

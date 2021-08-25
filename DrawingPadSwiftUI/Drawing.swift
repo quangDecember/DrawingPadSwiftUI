@@ -9,5 +9,6 @@
 import CoreGraphics
 
 struct Drawing {
+    var drawMode: DrawMode = .freeStyle
     var points: [CGPoint] = [CGPoint]()
 }

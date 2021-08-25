@@ -22,7 +22,8 @@ struct ContentView: View {
             DrawingPad(currentDrawing: $currentDrawing,
                        drawings: $drawings,
                        color: $color,
-                       lineWidth: $lineWidth)
+                       lineWidth: $lineWidth,
+                       drawMode: $drawingMode)
             DrawingControls(color: $color, drawings: $drawings, lineWidth: $lineWidth, drawMode: $drawingMode)
         }
     }
