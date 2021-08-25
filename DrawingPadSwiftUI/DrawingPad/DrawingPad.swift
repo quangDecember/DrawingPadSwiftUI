@@ -25,8 +25,8 @@ struct DrawingPad: View {
                     self.add(drawing: self.currentDrawing, toPath: &path)
                 }
                 .stroke(self.color, lineWidth: self.lineWidth)
-                .background(Color(white: 0.95))
-            }.gesture(
+                
+            }.background(Color(white: 0.95)).gesture(
                 DragGesture(minimumDistance: 0.1)
                     .onChanged({ (value) in
                         if self.currentDrawing.drawMode != self.drawMode {
