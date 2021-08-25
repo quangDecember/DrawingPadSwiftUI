@@ -65,8 +65,16 @@ struct DrawingPad: View {
             case .rectangle:
                 let current = points[0]
                 let next = points.last!
+                let other1 = CGPoint(x: current.x, y: next.y)
+                let other2 = CGPoint(x: next.x, y: current.y)
                 path.move(to: current)
+                path.addLine(to: other1)
+                path.move(to: other1)
                 path.addLine(to: next)
+                path.move(to: next)
+                path.addLine(to: other2)
+                path.move(to: other2)
+                path.addLine(to: current)
             }
         }
     }
