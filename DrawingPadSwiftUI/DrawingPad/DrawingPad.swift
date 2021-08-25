@@ -91,6 +91,24 @@ struct DrawingPad: View {
                                   width: abs(p1.x - p2.x),
                                   height: abs(p1.y - p2.y));
                 path.addEllipse(in: rect)
+            case .square:
+                let p1 = points[0]
+                let p2 = points.last!
+                let edge = min(abs(p1.x - p2.x), abs(p1.y - p2.y))
+                let rect = CGRect(x: min(p1.x, p2.x),
+                                  y: min(p1.y, p2.y),
+                                  width: edge,
+                                  height: edge);
+                path.addRect(rect)
+            case .circle:
+                let p1 = points[0]
+                let p2 = points.last!
+                let edge = min(abs(p1.x - p2.x), abs(p1.y - p2.y))
+                let rect = CGRect(x: min(p1.x, p2.x),
+                                  y: min(p1.y, p2.y),
+                                  width: edge,
+                                  height: edge);
+                path.addEllipse(in: rect)
             }
         }
     }

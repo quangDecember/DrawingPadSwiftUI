@@ -14,4 +14,6 @@ enum DrawMode: CaseIterable {
     case rectangle
     case rec2
     case eclipse
+    case square
+    case circle
 }
