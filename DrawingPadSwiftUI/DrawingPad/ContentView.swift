@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var color: Color = Color.black
     @State private var lineWidth: CGFloat = 3.0
     @State private var drawingMode = DrawMode.freeStyle
+    @State private var draggingElement = false
     
     var body: some View {
         VStack(alignment: .center) {
@@ -23,8 +24,9 @@ struct ContentView: View {
                        drawings: $drawings,
                        color: $color,
                        lineWidth: $lineWidth,
-                       drawMode: $drawingMode)
-            DrawingControls(color: $color, drawings: $drawings, lineWidth: $lineWidth, drawMode: $drawingMode)
+                       drawMode: $drawingMode,
+                       draggingElement: $draggingElement)
+            DrawingControls(color: $color, drawings: $drawings, lineWidth: $lineWidth, drawMode: $drawingMode, draggingElement: $draggingElement)
         }
     }
 }

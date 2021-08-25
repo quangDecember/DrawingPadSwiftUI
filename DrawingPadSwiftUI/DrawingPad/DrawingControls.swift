@@ -15,6 +15,7 @@ struct DrawingControls: View {
     @Binding var drawMode: DrawMode
     @State var internalDrawMode = DrawMode.freeStyle
     @State private var colorPickerShown = false
+    @Binding var draggingElement: Bool
 
     private let spacing: CGFloat = 40
     
@@ -50,6 +51,7 @@ struct DrawingControls: View {
                             }
                         }
                     }
+                    Toggle("move element", isOn: self.$draggingElement)
                 }
                 HStack {
                     Text("Pencil width")

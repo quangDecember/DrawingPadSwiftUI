@@ -14,6 +14,7 @@ struct DrawingPad: View {
     @Binding var color: Color
     @Binding var lineWidth: CGFloat
     @Binding var drawMode: DrawMode
+    @Binding var draggingElement: Bool
     
     var body: some View {
         GeometryReader { geometry in
@@ -34,6 +35,9 @@ struct DrawingPad: View {
             }.background(Color(white: 0.95)).gesture(
                 DragGesture(minimumDistance: 0.1)
                     .onChanged({ (value) in
+                        if self.draggingElement {
+                            return;
+                        }
                         if self.currentDrawing.drawMode != self.drawMode {
                             self.currentDrawing.drawMode = drawMode
                         }
@@ -47,6 +51,9 @@ struct DrawingPad: View {
                         }
                     })
                     .onEnded({ (value) in
+                        if self.draggingElement {
+                            return;
+                        }
                         self.drawings.append(self.currentDrawing)
                         self.currentDrawing = Drawing()
                     })
