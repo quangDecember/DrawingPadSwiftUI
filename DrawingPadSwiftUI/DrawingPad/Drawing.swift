@@ -7,8 +7,17 @@
 //
 
 import CoreGraphics
+import SwiftUI
 
-struct Drawing {
+struct Drawing: Hashable {
     var drawMode: DrawMode = .freeStyle
     var points: [CGPoint] = [CGPoint]()
+    var color = Color.black
+}
+
+extension CGPoint: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(x)
+        hasher.combine(y)
+    }
 }
