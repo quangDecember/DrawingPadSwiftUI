@@ -12,7 +12,8 @@ struct DrawingControls: View {
     @Binding var color: Color
     @Binding var drawings: [Drawing]
     @Binding var lineWidth: CGFloat
-    
+    @Binding var drawMode: DrawMode
+    @State var internalDrawMode = DrawMode.freeStyle
     @State private var colorPickerShown = false
 
     private let spacing: CGFloat = 40
@@ -29,8 +30,25 @@ struct DrawingControls: View {
                             self.drawings.removeLast()
                         }
                     }
+                }
+                HStack {
                     Button("Clear") {
                         self.drawings = [Drawing]()
+                    }
+
+                    Text(verbatim: "DrawMode: \(drawMode)").toolbar {
+                        ToolbarItem(placement: .primaryAction) {
+                            Menu {
+                                Picker(selection:$drawMode, label: Text("Mode")) {
+                                    ForEach(DrawMode.allCases, id: \.self) {
+                                        Text(verbatim: "\($0)")
+                                    }
+                                }
+                            }
+                            label: {
+                                Label("Sort", systemImage: "arrow.up.arrow.down")
+                            }
+                        }
                     }
                 }
                 HStack {

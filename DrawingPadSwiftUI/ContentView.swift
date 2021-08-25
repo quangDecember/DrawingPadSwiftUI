@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var drawings: [Drawing] = [Drawing]()
     @State private var color: Color = Color.black
     @State private var lineWidth: CGFloat = 3.0
+    @State private var drawingMode = DrawMode.freeStyle
     
     var body: some View {
         VStack(alignment: .center) {
@@ -22,7 +23,7 @@ struct ContentView: View {
                        drawings: $drawings,
                        color: $color,
                        lineWidth: $lineWidth)
-            DrawingControls(color: $color, drawings: $drawings, lineWidth: $lineWidth)
+            DrawingControls(color: $color, drawings: $drawings, lineWidth: $lineWidth, drawMode: $drawingMode)
         }
     }
 }
