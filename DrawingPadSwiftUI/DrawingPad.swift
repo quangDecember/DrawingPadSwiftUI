@@ -75,6 +75,22 @@ struct DrawingPad: View {
                 path.addLine(to: other2)
                 path.move(to: other2)
                 path.addLine(to: current)
+            case .rec2:
+                let p1 = points[0]
+                let p2 = points.last!
+                let rect = CGRect(x: min(p1.x, p2.x),
+                                  y: min(p1.y, p2.y),
+                                  width: abs(p1.x - p2.x),
+                                  height: abs(p1.y - p2.y));
+                path.addRect(rect)
+            case .eclipse:
+                let p1 = points[0]
+                let p2 = points.last!
+                let rect = CGRect(x: min(p1.x, p2.x),
+                                  y: min(p1.y, p2.y),
+                                  width: abs(p1.x - p2.x),
+                                  height: abs(p1.y - p2.y));
+                path.addEllipse(in: rect)
             }
         }
     }
