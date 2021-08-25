@@ -19,6 +19,8 @@
 		8B18CB4426D6B62A00B5FD59 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */; };
 		8B18CB4526D6B62A00B5FD59 /* DrawingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */; };
 		8B18CB4626D6B62A00B5FD59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */; };
+		8B18CB4826D70AD500B5FD59 /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */; };
+		8B18CB4A26D70B3600B5FD59 /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */; };
 		E8D874A222E2856D002FE405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A122E2856D002FE405 /* AppDelegate.swift */; };
 		E8D874A422E2856D002FE405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A322E2856D002FE405 /* SceneDelegate.swift */; };
 		E8D874A622E2856D002FE405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A522E2856D002FE405 /* ContentView.swift */; };
@@ -49,6 +51,8 @@
 		8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingControls.swift; sourceTree = "<group>"; };
 		8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
+		8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
 		E8D8749E22E2856D002FE405 /* DrawingPadSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPadSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D874A122E2856D002FE405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D874A322E2856D002FE405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		8B18CB2126D6B5D000B5FD59 /* DrawingPad */ = {
 			isa = PBXGroup;
 			children = (
+				8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */,
 				E8D874A522E2856D002FE405 /* ContentView.swift */,
 				E8D874BB22E285EB002FE405 /* ColorEntry.swift */,
 				E8D874B522E285EB002FE405 /* ColorPicker.swift */,
@@ -130,6 +135,7 @@
 				8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */,
 				8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */,
 				8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */,
+				8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */,
 			);
 			name = DrawingPad;
 			path = DrawingPadSwiftUI/DrawingPad;
@@ -283,6 +289,7 @@
 				8B18CB4426D6B62A00B5FD59 /* Drawing.swift in Sources */,
 				8B18CB4626D6B62A00B5FD59 /* ContentView.swift in Sources */,
 				8B18CB2926D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift in Sources */,
+				8B18CB4826D70AD500B5FD59 /* UtilsExtension.swift in Sources */,
 				8B18CB4326D6B62A00B5FD59 /* DrawingPad.swift in Sources */,
 				8B18CB4226D6B62A00B5FD59 /* ColorPicker.swift in Sources */,
 			);
@@ -300,6 +307,7 @@
 				E8D874C122E285EC002FE405 /* DrawingControls.swift in Sources */,
 				E8D874A422E2856D002FE405 /* SceneDelegate.swift in Sources */,
 				E8D874BF22E285EC002FE405 /* DrawingPad.swift in Sources */,
+				8B18CB4A26D70B3600B5FD59 /* UtilsExtension.swift in Sources */,
 				E8D874C222E285EC002FE405 /* ColorEntry.swift in Sources */,
 				E8D874A622E2856D002FE405 /* ContentView.swift in Sources */,
 			);

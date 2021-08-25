@@ -19,13 +19,18 @@ struct DrawingPad: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack{
-                ForEach(self.drawings, id: \.self){ drawingElement in
+                ForEach(Array(self.drawings.enumerated()), id: \.element){ ind, drawingElement in
                     Path { path in
                         
                         self.add(drawing: drawingElement, toPath: &path)
                         
                     }
                     .stroke(drawingElement.color, lineWidth: self.lineWidth)
+                    .gesture(
+                        DragGesture(minimumDistance: 0.1).onEnded({ value in
+                            self.drawings[ind].points = self.drawings[ind].points.map({ $0.moveWithVector(originPoint: value.startLocation, endPoint: value.location) })
+                        })
+                    )
                 }
                 
                 Path { path in
