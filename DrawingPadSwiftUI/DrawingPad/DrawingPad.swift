@@ -17,30 +17,31 @@ struct DrawingPad: View {
     
     var body: some View {
         GeometryReader { geometry in
-            Path { path in
-                for drawing in self.drawings {
-                    self.add(drawing: drawing, toPath: &path)
+            ZStack{
+                Path { path in
+                    for drawing in self.drawings {
+                        self.add(drawing: drawing, toPath: &path)
+                    }
+                    self.add(drawing: self.currentDrawing, toPath: &path)
                 }
-                self.add(drawing: self.currentDrawing, toPath: &path)
-            }
-            .stroke(self.color, lineWidth: self.lineWidth)
+                .stroke(self.color, lineWidth: self.lineWidth)
                 .background(Color(white: 0.95))
-                .gesture(
-                    DragGesture(minimumDistance: 0.1)
-                        .onChanged({ (value) in
-                            if self.currentDrawing.drawMode != self.drawMode {
-                                self.currentDrawing.drawMode = drawMode
-                            }
-                            let currentPoint = value.location
-                            if currentPoint.y >= 0
-                                && currentPoint.y < geometry.size.height {
-                                self.currentDrawing.points.append(currentPoint)
-                            }
-                        })
-                        .onEnded({ (value) in
-                            self.drawings.append(self.currentDrawing)
-                            self.currentDrawing = Drawing()
-                        })
+            }.gesture(
+                DragGesture(minimumDistance: 0.1)
+                    .onChanged({ (value) in
+                        if self.currentDrawing.drawMode != self.drawMode {
+                            self.currentDrawing.drawMode = drawMode
+                        }
+                        let currentPoint = value.location
+                        if currentPoint.y >= 0
+                            && currentPoint.y < geometry.size.height {
+                            self.currentDrawing.points.append(currentPoint)
+                        }
+                    })
+                    .onEnded({ (value) in
+                        self.drawings.append(self.currentDrawing)
+                        self.currentDrawing = Drawing()
+                    })
             )
         }
         .frame(maxHeight: .infinity)
