@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8B18CB2026D6A21900B5FD59 /* DrawMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB1F26D6A21900B5FD59 /* DrawMode.swift */; };
+		8B18CB2926D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB2826D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift */; };
+		8B18CB2D26D6B60300B5FD59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B18CB2C26D6B60300B5FD59 /* Assets.xcassets */; };
+		8B18CB3026D6B60300B5FD59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B18CB2F26D6B60300B5FD59 /* Preview Assets.xcassets */; };
+		8B18CB3F26D6B62A00B5FD59 /* ColorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3726D6B62A00B5FD59 /* ColorsProvider.swift */; };
+		8B18CB4026D6B62A00B5FD59 /* ColorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3826D6B62A00B5FD59 /* ColorEntry.swift */; };
+		8B18CB4126D6B62A00B5FD59 /* DrawMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3926D6B62A00B5FD59 /* DrawMode.swift */; };
+		8B18CB4226D6B62A00B5FD59 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3A26D6B62A00B5FD59 /* ColorPicker.swift */; };
+		8B18CB4326D6B62A00B5FD59 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3B26D6B62A00B5FD59 /* DrawingPad.swift */; };
+		8B18CB4426D6B62A00B5FD59 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */; };
+		8B18CB4526D6B62A00B5FD59 /* DrawingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */; };
+		8B18CB4626D6B62A00B5FD59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */; };
 		E8D874A222E2856D002FE405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A122E2856D002FE405 /* AppDelegate.swift */; };
 		E8D874A422E2856D002FE405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A322E2856D002FE405 /* SceneDelegate.swift */; };
 		E8D874A622E2856D002FE405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A522E2856D002FE405 /* ContentView.swift */; };
@@ -24,6 +35,20 @@
 
 /* Begin PBXFileReference section */
 		8B18CB1F26D6A21900B5FD59 /* DrawMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawMode.swift; sourceTree = "<group>"; };
+		8B18CB2626D6B60200B5FD59 /* DrawingPadSwiftUIMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPadSwiftUIMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B18CB2826D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPadSwiftUIMacApp.swift; sourceTree = "<group>"; };
+		8B18CB2C26D6B60300B5FD59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B18CB2F26D6B60300B5FD59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B18CB3126D6B60300B5FD59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B18CB3226D6B60300B5FD59 /* DrawingPadSwiftUIMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrawingPadSwiftUIMac.entitlements; sourceTree = "<group>"; };
+		8B18CB3726D6B62A00B5FD59 /* ColorsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsProvider.swift; sourceTree = "<group>"; };
+		8B18CB3826D6B62A00B5FD59 /* ColorEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorEntry.swift; sourceTree = "<group>"; };
+		8B18CB3926D6B62A00B5FD59 /* DrawMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawMode.swift; sourceTree = "<group>"; };
+		8B18CB3A26D6B62A00B5FD59 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		8B18CB3B26D6B62A00B5FD59 /* DrawingPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingPad.swift; sourceTree = "<group>"; };
+		8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingControls.swift; sourceTree = "<group>"; };
+		8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8D8749E22E2856D002FE405 /* DrawingPadSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPadSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D874A122E2856D002FE405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D874A322E2856D002FE405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B18CB2326D6B60200B5FD59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8D8749B22E2856D002FE405 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +83,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B18CB2126D6B5D000B5FD59 /* DrawingPad */ = {
+			isa = PBXGroup;
+			children = (
+				E8D874A522E2856D002FE405 /* ContentView.swift */,
+				E8D874BB22E285EB002FE405 /* ColorEntry.swift */,
+				E8D874B522E285EB002FE405 /* ColorPicker.swift */,
+				E8D874B622E285EB002FE405 /* ColorsProvider.swift */,
+				E8D874B722E285EB002FE405 /* Drawing.swift */,
+				E8D874BA22E285EB002FE405 /* DrawingControls.swift */,
+				E8D874B822E285EB002FE405 /* DrawingPad.swift */,
+				8B18CB1F26D6A21900B5FD59 /* DrawMode.swift */,
+			);
+			path = DrawingPad;
+			sourceTree = "<group>";
+		};
+		8B18CB2726D6B60200B5FD59 /* DrawingPadSwiftUIMac */ = {
+			isa = PBXGroup;
+			children = (
+				8B18CB3626D6B62A00B5FD59 /* DrawingPad */,
+				8B18CB2826D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift */,
+				8B18CB2C26D6B60300B5FD59 /* Assets.xcassets */,
+				8B18CB3126D6B60300B5FD59 /* Info.plist */,
+				8B18CB3226D6B60300B5FD59 /* DrawingPadSwiftUIMac.entitlements */,
+				8B18CB2E26D6B60300B5FD59 /* Preview Content */,
+			);
+			path = DrawingPadSwiftUIMac;
+			sourceTree = "<group>";
+		};
+		8B18CB2E26D6B60300B5FD59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8B18CB2F26D6B60300B5FD59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B18CB3626D6B62A00B5FD59 /* DrawingPad */ = {
+			isa = PBXGroup;
+			children = (
+				8B18CB3726D6B62A00B5FD59 /* ColorsProvider.swift */,
+				8B18CB3826D6B62A00B5FD59 /* ColorEntry.swift */,
+				8B18CB3926D6B62A00B5FD59 /* DrawMode.swift */,
+				8B18CB3A26D6B62A00B5FD59 /* ColorPicker.swift */,
+				8B18CB3B26D6B62A00B5FD59 /* DrawingPad.swift */,
+				8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */,
+				8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */,
+				8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */,
+			);
+			name = DrawingPad;
+			path = DrawingPadSwiftUI/DrawingPad;
+			sourceTree = SOURCE_ROOT;
+		};
 		E8D8749522E2856D002FE405 = {
 			isa = PBXGroup;
 			children = (
 				E8D874A022E2856D002FE405 /* DrawingPadSwiftUI */,
+				8B18CB2726D6B60200B5FD59 /* DrawingPadSwiftUIMac */,
 				E8D8749F22E2856D002FE405 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E8D8749E22E2856D002FE405 /* DrawingPadSwiftUI.app */,
+				8B18CB2626D6B60200B5FD59 /* DrawingPadSwiftUIMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,18 +158,11 @@
 			children = (
 				E8D874A122E2856D002FE405 /* AppDelegate.swift */,
 				E8D874A322E2856D002FE405 /* SceneDelegate.swift */,
-				E8D874A522E2856D002FE405 /* ContentView.swift */,
-				E8D874BB22E285EB002FE405 /* ColorEntry.swift */,
-				E8D874B522E285EB002FE405 /* ColorPicker.swift */,
-				E8D874B622E285EB002FE405 /* ColorsProvider.swift */,
-				E8D874B722E285EB002FE405 /* Drawing.swift */,
-				E8D874BA22E285EB002FE405 /* DrawingControls.swift */,
-				E8D874B822E285EB002FE405 /* DrawingPad.swift */,
+				8B18CB2126D6B5D000B5FD59 /* DrawingPad */,
 				E8D874A722E2856F002FE405 /* Assets.xcassets */,
 				E8D874AC22E2856F002FE405 /* LaunchScreen.storyboard */,
 				E8D874AF22E2856F002FE405 /* Info.plist */,
 				E8D874A922E2856F002FE405 /* Preview Content */,
-				8B18CB1F26D6A21900B5FD59 /* DrawMode.swift */,
 			);
 			path = DrawingPadSwiftUI;
 			sourceTree = "<group>";
@@ -99,6 +178,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8B18CB2526D6B60200B5FD59 /* DrawingPadSwiftUIMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B18CB3326D6B60300B5FD59 /* Build configuration list for PBXNativeTarget "DrawingPadSwiftUIMac" */;
+			buildPhases = (
+				8B18CB2226D6B60200B5FD59 /* Sources */,
+				8B18CB2326D6B60200B5FD59 /* Frameworks */,
+				8B18CB2426D6B60200B5FD59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawingPadSwiftUIMac;
+			productName = DrawingPadSwiftUIMac;
+			productReference = 8B18CB2626D6B60200B5FD59 /* DrawingPadSwiftUIMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E8D8749D22E2856D002FE405 /* DrawingPadSwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8D874B222E2856F002FE405 /* Build configuration list for PBXNativeTarget "DrawingPadSwiftUI" */;
@@ -122,10 +218,13 @@
 		E8D8749622E2856D002FE405 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Mitrevski;
 				TargetAttributes = {
+					8B18CB2526D6B60200B5FD59 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					E8D8749D22E2856D002FE405 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -145,11 +244,21 @@
 			projectRoot = "";
 			targets = (
 				E8D8749D22E2856D002FE405 /* DrawingPadSwiftUI */,
+				8B18CB2526D6B60200B5FD59 /* DrawingPadSwiftUIMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8B18CB2426D6B60200B5FD59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B18CB3026D6B60300B5FD59 /* Preview Assets.xcassets in Resources */,
+				8B18CB2D26D6B60300B5FD59 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8D8749C22E2856D002FE405 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +272,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B18CB2226D6B60200B5FD59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B18CB4026D6B62A00B5FD59 /* ColorEntry.swift in Sources */,
+				8B18CB3F26D6B62A00B5FD59 /* ColorsProvider.swift in Sources */,
+				8B18CB4126D6B62A00B5FD59 /* DrawMode.swift in Sources */,
+				8B18CB4526D6B62A00B5FD59 /* DrawingControls.swift in Sources */,
+				8B18CB4426D6B62A00B5FD59 /* Drawing.swift in Sources */,
+				8B18CB4626D6B62A00B5FD59 /* ContentView.swift in Sources */,
+				8B18CB2926D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift in Sources */,
+				8B18CB4326D6B62A00B5FD59 /* DrawingPad.swift in Sources */,
+				8B18CB4226D6B62A00B5FD59 /* ColorPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8D8749A22E2856D002FE405 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +319,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B18CB3426D6B60300B5FD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = DrawingPadSwiftUIMac/DrawingPadSwiftUIMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DrawingPadSwiftUIMac/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DrawingPadSwiftUIMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = ha.quang.DrawingPadSwiftUIMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B18CB3526D6B60300B5FD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = DrawingPadSwiftUIMac/DrawingPadSwiftUIMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DrawingPadSwiftUIMac/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DrawingPadSwiftUIMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = ha.quang.DrawingPadSwiftUIMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		E8D874B022E2856F002FE405 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B18CB3326D6B60300B5FD59 /* Build configuration list for PBXNativeTarget "DrawingPadSwiftUIMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B18CB3426D6B60300B5FD59 /* Debug */,
+				8B18CB3526D6B60300B5FD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E8D8749922E2856D002FE405 /* Build configuration list for PBXProject "DrawingPadSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
