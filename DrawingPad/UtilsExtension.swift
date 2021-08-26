@@ -7,6 +7,9 @@
 //
 
 import Foundation
+#if os(iOS)
+import CoreGraphics
+#endif
 
 extension CGPoint {
     func moveWithVector(originPoint: CGPoint, endPoint: CGPoint) -> CGPoint {

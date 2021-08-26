@@ -38,6 +38,9 @@ struct DrawingPad: View {
                             #if os(macOS)
                             NSPasteboard.general.clearContents()
                             NSPasteboard.general.setData(s, forType: .string)
+                            #else
+                            
+                            UIPasteboard.general.setData(s, forPasteboardType: "drawing")
                             #endif
                         } catch {
                             print(error)
@@ -76,9 +79,15 @@ struct DrawingPad: View {
                     })
             )
             .onTapGesture(count: 2, perform: {
+                #if os(macOS)
                 guard let rawLastDrawing = NSPasteboard.general.data(forType: .string) else {
                     return
                 }
+                #elseif os(iOS)
+                guard let rawLastDrawing = UIPasteboard.general.data(forPasteboardType: "drawing") else {
+                    return
+                }
+                #endif
                 do {
                     var clipboardDrawing = try JSONDecoder().decode(Drawing.self, from: rawLastDrawing)
                     let moveX = Int.random(in: 1..<50)

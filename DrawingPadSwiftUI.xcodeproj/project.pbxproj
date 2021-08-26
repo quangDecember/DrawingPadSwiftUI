@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B18CB2026D6A21900B5FD59 /* DrawMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB1F26D6A21900B5FD59 /* DrawMode.swift */; };
 		8B18CB2926D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB2826D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift */; };
 		8B18CB2D26D6B60300B5FD59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B18CB2C26D6B60300B5FD59 /* Assets.xcassets */; };
 		8B18CB3026D6B60300B5FD59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B18CB2F26D6B60300B5FD59 /* Preview Assets.xcassets */; };
@@ -20,25 +19,27 @@
 		8B18CB4526D6B62A00B5FD59 /* DrawingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */; };
 		8B18CB4626D6B62A00B5FD59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */; };
 		8B18CB4826D70AD500B5FD59 /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */; };
-		8B18CB4A26D70B3600B5FD59 /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */; };
 		8B18CB4C26D7287600B5FD59 /* TapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */; };
 		8B18CB4E26D72CFE00B5FD59 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */; };
+		8B18CB4F26D7340300B5FD59 /* ColorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3726D6B62A00B5FD59 /* ColorsProvider.swift */; };
+		8B18CB5026D7340600B5FD59 /* ColorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3826D6B62A00B5FD59 /* ColorEntry.swift */; };
+		8B18CB5126D7340800B5FD59 /* DrawMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3926D6B62A00B5FD59 /* DrawMode.swift */; };
+		8B18CB5226D7340B00B5FD59 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3A26D6B62A00B5FD59 /* ColorPicker.swift */; };
+		8B18CB5326D7341100B5FD59 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */; };
+		8B18CB5426D7341400B5FD59 /* TapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */; };
+		8B18CB5526D7341700B5FD59 /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */; };
+		8B18CB5626D7341A00B5FD59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */; };
+		8B18CB5726D7341C00B5FD59 /* DrawingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */; };
+		8B18CB5826D7341F00B5FD59 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */; };
+		8B18CB5926D7342200B5FD59 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3B26D6B62A00B5FD59 /* DrawingPad.swift */; };
 		E8D874A222E2856D002FE405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A122E2856D002FE405 /* AppDelegate.swift */; };
 		E8D874A422E2856D002FE405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A322E2856D002FE405 /* SceneDelegate.swift */; };
-		E8D874A622E2856D002FE405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A522E2856D002FE405 /* ContentView.swift */; };
 		E8D874A822E2856F002FE405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D874A722E2856F002FE405 /* Assets.xcassets */; };
 		E8D874AB22E2856F002FE405 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D874AA22E2856F002FE405 /* Preview Assets.xcassets */; };
 		E8D874AE22E2856F002FE405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D874AC22E2856F002FE405 /* LaunchScreen.storyboard */; };
-		E8D874BC22E285EC002FE405 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874B522E285EB002FE405 /* ColorPicker.swift */; };
-		E8D874BD22E285EC002FE405 /* ColorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874B622E285EB002FE405 /* ColorsProvider.swift */; };
-		E8D874BE22E285EC002FE405 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874B722E285EB002FE405 /* Drawing.swift */; };
-		E8D874BF22E285EC002FE405 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874B822E285EB002FE405 /* DrawingPad.swift */; };
-		E8D874C122E285EC002FE405 /* DrawingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874BA22E285EB002FE405 /* DrawingControls.swift */; };
-		E8D874C222E285EC002FE405 /* ColorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874BB22E285EB002FE405 /* ColorEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B18CB1F26D6A21900B5FD59 /* DrawMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawMode.swift; sourceTree = "<group>"; };
 		8B18CB2626D6B60200B5FD59 /* DrawingPadSwiftUIMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPadSwiftUIMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B18CB2826D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPadSwiftUIMacApp.swift; sourceTree = "<group>"; };
 		8B18CB2C26D6B60300B5FD59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,23 +55,15 @@
 		8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingControls.swift; sourceTree = "<group>"; };
 		8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
-		8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
 		8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapRecognizer.swift; sourceTree = "<group>"; };
 		8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		E8D8749E22E2856D002FE405 /* DrawingPadSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPadSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D874A122E2856D002FE405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D874A322E2856D002FE405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8D874A522E2856D002FE405 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8D874A722E2856F002FE405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D874AA22E2856F002FE405 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8D874AD22E2856F002FE405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8D874AF22E2856F002FE405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8D874B522E285EB002FE405 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
-		E8D874B622E285EB002FE405 /* ColorsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsProvider.swift; sourceTree = "<group>"; };
-		E8D874B722E285EB002FE405 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
-		E8D874B822E285EB002FE405 /* DrawingPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingPad.swift; sourceTree = "<group>"; };
-		E8D874BA22E285EB002FE405 /* DrawingControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingControls.swift; sourceTree = "<group>"; };
-		E8D874BB22E285EB002FE405 /* ColorEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,26 +84,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B18CB2126D6B5D000B5FD59 /* DrawingPad */ = {
-			isa = PBXGroup;
-			children = (
-				8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */,
-				E8D874A522E2856D002FE405 /* ContentView.swift */,
-				E8D874BB22E285EB002FE405 /* ColorEntry.swift */,
-				E8D874B522E285EB002FE405 /* ColorPicker.swift */,
-				E8D874B622E285EB002FE405 /* ColorsProvider.swift */,
-				E8D874B722E285EB002FE405 /* Drawing.swift */,
-				E8D874BA22E285EB002FE405 /* DrawingControls.swift */,
-				E8D874B822E285EB002FE405 /* DrawingPad.swift */,
-				8B18CB1F26D6A21900B5FD59 /* DrawMode.swift */,
-			);
-			path = DrawingPad;
-			sourceTree = "<group>";
-		};
 		8B18CB2726D6B60200B5FD59 /* DrawingPadSwiftUIMac */ = {
 			isa = PBXGroup;
 			children = (
-				8B18CB3626D6B62A00B5FD59 /* DrawingPad */,
 				8B18CB2826D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift */,
 				8B18CB2C26D6B60300B5FD59 /* Assets.xcassets */,
 				8B18CB3126D6B60300B5FD59 /* Info.plist */,
@@ -143,13 +119,13 @@
 				8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */,
 				8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */,
 			);
-			name = DrawingPad;
-			path = DrawingPadSwiftUI/DrawingPad;
+			path = DrawingPad;
 			sourceTree = SOURCE_ROOT;
 		};
 		E8D8749522E2856D002FE405 = {
 			isa = PBXGroup;
 			children = (
+				8B18CB3626D6B62A00B5FD59 /* DrawingPad */,
 				E8D874A022E2856D002FE405 /* DrawingPadSwiftUI */,
 				8B18CB2726D6B60200B5FD59 /* DrawingPadSwiftUIMac */,
 				E8D8749F22E2856D002FE405 /* Products */,
@@ -170,7 +146,6 @@
 			children = (
 				E8D874A122E2856D002FE405 /* AppDelegate.swift */,
 				E8D874A322E2856D002FE405 /* SceneDelegate.swift */,
-				8B18CB2126D6B5D000B5FD59 /* DrawingPad */,
 				E8D874A722E2856F002FE405 /* Assets.xcassets */,
 				E8D874AC22E2856F002FE405 /* LaunchScreen.storyboard */,
 				E8D874AF22E2856F002FE405 /* Info.plist */,
@@ -307,17 +282,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B18CB5026D7340600B5FD59 /* ColorEntry.swift in Sources */,
+				8B18CB4F26D7340300B5FD59 /* ColorsProvider.swift in Sources */,
+				8B18CB5126D7340800B5FD59 /* DrawMode.swift in Sources */,
+				8B18CB5426D7341400B5FD59 /* TapRecognizer.swift in Sources */,
+				8B18CB5726D7341C00B5FD59 /* DrawingControls.swift in Sources */,
+				8B18CB5326D7341100B5FD59 /* Color+Codable.swift in Sources */,
+				8B18CB5926D7342200B5FD59 /* DrawingPad.swift in Sources */,
+				8B18CB5526D7341700B5FD59 /* UtilsExtension.swift in Sources */,
+				8B18CB5626D7341A00B5FD59 /* ContentView.swift in Sources */,
+				8B18CB5826D7341F00B5FD59 /* Drawing.swift in Sources */,
 				E8D874A222E2856D002FE405 /* AppDelegate.swift in Sources */,
-				E8D874BC22E285EC002FE405 /* ColorPicker.swift in Sources */,
-				8B18CB2026D6A21900B5FD59 /* DrawMode.swift in Sources */,
-				E8D874BE22E285EC002FE405 /* Drawing.swift in Sources */,
-				E8D874BD22E285EC002FE405 /* ColorsProvider.swift in Sources */,
-				E8D874C122E285EC002FE405 /* DrawingControls.swift in Sources */,
 				E8D874A422E2856D002FE405 /* SceneDelegate.swift in Sources */,
-				E8D874BF22E285EC002FE405 /* DrawingPad.swift in Sources */,
-				8B18CB4A26D70B3600B5FD59 /* UtilsExtension.swift in Sources */,
-				E8D874C222E285EC002FE405 /* ColorEntry.swift in Sources */,
-				E8D874A622E2856D002FE405 /* ContentView.swift in Sources */,
+				8B18CB5226D7340B00B5FD59 /* ColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
