@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ColorInfo: Identifiable {
+struct ColorInfo: Identifiable, Hashable {
     let id: Int
     let displayName: String
     let color: Color

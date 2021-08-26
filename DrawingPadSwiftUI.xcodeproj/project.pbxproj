@@ -32,6 +32,8 @@
 		8B18CB5726D7341C00B5FD59 /* DrawingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */; };
 		8B18CB5826D7341F00B5FD59 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3C26D6B62A00B5FD59 /* Drawing.swift */; };
 		8B18CB5926D7342200B5FD59 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3B26D6B62A00B5FD59 /* DrawingPad.swift */; };
+		8B18CB5B26D7423100B5FD59 /* SelectMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB5A26D7423100B5FD59 /* SelectMode.swift */; };
+		8B18CB5C26D742A700B5FD59 /* SelectMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB5A26D7423100B5FD59 /* SelectMode.swift */; };
 		E8D874A222E2856D002FE405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A122E2856D002FE405 /* AppDelegate.swift */; };
 		E8D874A422E2856D002FE405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A322E2856D002FE405 /* SceneDelegate.swift */; };
 		E8D874A822E2856F002FE405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D874A722E2856F002FE405 /* Assets.xcassets */; };
@@ -57,6 +59,7 @@
 		8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
 		8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapRecognizer.swift; sourceTree = "<group>"; };
 		8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		8B18CB5A26D7423100B5FD59 /* SelectMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMode.swift; sourceTree = "<group>"; };
 		E8D8749E22E2856D002FE405 /* DrawingPadSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPadSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D874A122E2856D002FE405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D874A322E2856D002FE405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 				8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */,
 				8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */,
 				8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */,
+				8B18CB5A26D7423100B5FD59 /* SelectMode.swift */,
 			);
 			path = DrawingPad;
 			sourceTree = SOURCE_ROOT;
@@ -275,6 +279,7 @@
 				8B18CB4C26D7287600B5FD59 /* TapRecognizer.swift in Sources */,
 				8B18CB4E26D72CFE00B5FD59 /* Color+Codable.swift in Sources */,
 				8B18CB4226D6B62A00B5FD59 /* ColorPicker.swift in Sources */,
+				8B18CB5B26D7423100B5FD59 /* SelectMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +289,7 @@
 			files = (
 				8B18CB5026D7340600B5FD59 /* ColorEntry.swift in Sources */,
 				8B18CB4F26D7340300B5FD59 /* ColorsProvider.swift in Sources */,
+				8B18CB5C26D742A700B5FD59 /* SelectMode.swift in Sources */,
 				8B18CB5126D7340800B5FD59 /* DrawMode.swift in Sources */,
 				8B18CB5426D7341400B5FD59 /* TapRecognizer.swift in Sources */,
 				8B18CB5726D7341C00B5FD59 /* DrawingControls.swift in Sources */,

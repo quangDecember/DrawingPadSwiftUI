@@ -16,6 +16,7 @@ struct DrawingControls: View {
     @State var internalDrawMode = DrawMode.freeStyle
     @State private var colorPickerShown = false
     @Binding var draggingElement: Bool
+    @Binding var selectMode: SelectMode
 
     private let spacing: CGFloat = 40
     
@@ -37,20 +38,7 @@ struct DrawingControls: View {
                         self.drawings = [Drawing]()
                     }
 
-                    Text(verbatim: "DrawMode: \(drawMode)").toolbar {
-                        ToolbarItem(placement: .primaryAction) {
-                            Menu {
-                                Picker(selection:$drawMode, label: Text("Mode")) {
-                                    ForEach(DrawMode.allCases, id: \.self) {
-                                        Text(verbatim: "\($0)")
-                                    }
-                                }
-                            }
-                            label: {
-                                Label("Sort", systemImage: "arrow.up.arrow.down")
-                            }
-                        }
-                    }
+                    Text(verbatim: "DrawMode: \(drawMode)")
                     Toggle("move element", isOn: self.$draggingElement)
                 }
                 HStack {
@@ -60,7 +48,48 @@ struct DrawingControls: View {
                         .padding()
                 }
             }
-
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Menu {
+                        Picker(selection:$drawMode, label: Text("Style")) {
+                            ForEach(DrawMode.allCases, id: \.self) {
+                                Text(verbatim: "\($0)")
+                            }
+                        }
+                    }
+                    label: {
+                        Label("Shape", systemImage: "scribble.variable")
+                    }
+                }
+                ToolbarItem(placement: .primaryAction, content: {
+                    Menu {
+                        Picker(selection:$selectMode, label: Text("Mode")) {
+                            ForEach(SelectMode.allCases, id: \.self) {
+                                Text(verbatim: "\($0)")
+                            }
+                        }
+                    }
+                    label: {
+                        Label("Sort", systemImage: "filemenu.and.selection")
+                    }
+                })
+                ToolbarItem(placement: .primaryAction, content: {
+                    Menu {
+                        Picker(selection:$color, label: Text("Color")) {
+                            ForEach(ColorsProvider.supportedColors().map({ $0.color }), id: \.self) { color in
+                                if let colorInfo = ColorsProvider.supportedColors().first(where: { $0.color == color }) {
+                                    ColorEntry(colorInfo: colorInfo)
+                                } else {
+                                    Text(verbatim: "\(color)")
+                                }
+                            }
+                        }
+                    }
+                    label: {
+                        Label("Color", systemImage: "filemenu.and.selection")
+                    }
+                })
+            }
         }
         .frame(height: 200)
         .sheet(isPresented: $colorPickerShown, onDismiss: {
