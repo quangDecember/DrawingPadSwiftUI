@@ -21,6 +21,8 @@
 		8B18CB4626D6B62A00B5FD59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */; };
 		8B18CB4826D70AD500B5FD59 /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */; };
 		8B18CB4A26D70B3600B5FD59 /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */; };
+		8B18CB4C26D7287600B5FD59 /* TapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */; };
+		8B18CB4E26D72CFE00B5FD59 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */; };
 		E8D874A222E2856D002FE405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A122E2856D002FE405 /* AppDelegate.swift */; };
 		E8D874A422E2856D002FE405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A322E2856D002FE405 /* SceneDelegate.swift */; };
 		E8D874A622E2856D002FE405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D874A522E2856D002FE405 /* ContentView.swift */; };
@@ -53,6 +55,8 @@
 		8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
 		8B18CB4926D70B3600B5FD59 /* UtilsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
+		8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapRecognizer.swift; sourceTree = "<group>"; };
+		8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		E8D8749E22E2856D002FE405 /* DrawingPadSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPadSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D874A122E2856D002FE405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D874A322E2856D002FE405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				8B18CB3D26D6B62A00B5FD59 /* DrawingControls.swift */,
 				8B18CB3E26D6B62A00B5FD59 /* ContentView.swift */,
 				8B18CB4726D70AD500B5FD59 /* UtilsExtension.swift */,
+				8B18CB4B26D7287600B5FD59 /* TapRecognizer.swift */,
+				8B18CB4D26D72CFE00B5FD59 /* Color+Codable.swift */,
 			);
 			name = DrawingPad;
 			path = DrawingPadSwiftUI/DrawingPad;
@@ -291,6 +297,8 @@
 				8B18CB2926D6B60200B5FD59 /* DrawingPadSwiftUIMacApp.swift in Sources */,
 				8B18CB4826D70AD500B5FD59 /* UtilsExtension.swift in Sources */,
 				8B18CB4326D6B62A00B5FD59 /* DrawingPad.swift in Sources */,
+				8B18CB4C26D7287600B5FD59 /* TapRecognizer.swift in Sources */,
+				8B18CB4E26D72CFE00B5FD59 /* Color+Codable.swift in Sources */,
 				8B18CB4226D6B62A00B5FD59 /* ColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

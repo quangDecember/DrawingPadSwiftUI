@@ -31,6 +31,18 @@ struct DrawingPad: View {
                             self.drawings[ind].points = self.drawings[ind].points.map({ $0.moveWithVector(originPoint: value.startLocation, endPoint: value.location) })
                         })
                     )
+                    .gesture(TapGesture(count: 2).onEnded {
+                        print("double clicked")
+                        do {
+                            let s = try JSONEncoder().encode(drawingElement)
+                            #if os(macOS)
+                            NSPasteboard.general.clearContents()
+                            NSPasteboard.general.setData(s, forType: .string)
+                            #endif
+                        } catch {
+                            print(error)
+                        }
+                    })
                 }
                 
                 Path { path in
@@ -63,6 +75,19 @@ struct DrawingPad: View {
                         self.currentDrawing = Drawing()
                     })
             )
+            .onTapGesture(count: 2, perform: {
+                guard let rawLastDrawing = NSPasteboard.general.data(forType: .string) else {
+                    return
+                }
+                do {
+                    var clipboardDrawing = try JSONDecoder().decode(Drawing.self, from: rawLastDrawing)
+                    let moveX = Int.random(in: 1..<50)
+                    let moveY = Int.random(in: 1..<50)
+                    let pastingDrawingPoints = clipboardDrawing.points.map{ CGPoint(x: $0.x + CGFloat(moveX), y: $0.y + CGFloat(moveY)) }
+                    clipboardDrawing.points = pastingDrawingPoints
+                    self.drawings.append(clipboardDrawing)
+                } catch { print(error)  }
+            })
         }
         .frame(maxHeight: .infinity)
     }

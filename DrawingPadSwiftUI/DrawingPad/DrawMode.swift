@@ -8,7 +8,8 @@
 
 import Foundation
 
-enum DrawMode: CaseIterable {
+enum DrawMode: Int, CaseIterable, Codable {
+    
     case freeStyle
     case line
     case rectangle
