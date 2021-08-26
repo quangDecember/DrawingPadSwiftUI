@@ -15,6 +15,18 @@ struct DrawingPad: View {
     @Binding var lineWidth: CGFloat
     @Binding var drawMode: DrawMode
     @Binding var draggingElement: Bool
+    @Binding var selectMode: SelectMode
+    
+    fileprivate func copyToClipboard(drawingElement: Drawing) throws {
+        let s = try JSONEncoder().encode(drawingElement)
+        #if os(macOS)
+        NSPasteboard.general.clearContents()
+        NSPasteboard.general.setData(s, forType: .string)
+        #else
+        
+        UIPasteboard.general.setData(s, forPasteboardType: "drawing")
+        #endif
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -34,14 +46,13 @@ struct DrawingPad: View {
                     .gesture(TapGesture(count: 2).onEnded {
                         print("double clicked")
                         do {
-                            let s = try JSONEncoder().encode(drawingElement)
-                            #if os(macOS)
-                            NSPasteboard.general.clearContents()
-                            NSPasteboard.general.setData(s, forType: .string)
-                            #else
-                            
-                            UIPasteboard.general.setData(s, forPasteboardType: "drawing")
-                            #endif
+                            switch self.selectMode{
+                            case .copy:
+                                try copyToClipboard(drawingElement: drawingElement)
+                            case .cut:
+                                try copyToClipboard(drawingElement: drawingElement)
+                                self.drawings.remove(at: ind)
+                            }
                         } catch {
                             print(error)
                         }
@@ -90,8 +101,8 @@ struct DrawingPad: View {
                 #endif
                 do {
                     var clipboardDrawing = try JSONDecoder().decode(Drawing.self, from: rawLastDrawing)
-                    let moveX = Int.random(in: 1..<50)
-                    let moveY = Int.random(in: 1..<50)
+                    let moveX = Int.random(in: 1..<100)
+                    let moveY = Int.random(in: 1..<100)
                     let pastingDrawingPoints = clipboardDrawing.points.map{ CGPoint(x: $0.x + CGFloat(moveX), y: $0.y + CGFloat(moveY)) }
                     clipboardDrawing.points = pastingDrawingPoints
                     self.drawings.append(clipboardDrawing)

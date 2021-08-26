@@ -28,7 +28,9 @@ struct ContentView: View {
                        color: $color,
                        lineWidth: $lineWidth,
                        drawMode: $drawingMode,
-                       draggingElement: $draggingElement)
+                       draggingElement: $draggingElement,
+                       selectMode: $selectMode
+            )
             DrawingControls(color: $color, drawings: $drawings, lineWidth: $lineWidth, drawMode: $drawingMode, draggingElement: $draggingElement, selectMode: $selectMode)
         }
     }

@@ -41,6 +41,12 @@ fileprivate extension Color {
         
         return (r, g, b, a)
     }
+    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        let color = SystemColor(self).usingColorSpace(.deviceRGB)!
+        var t = (CGFloat(), CGFloat(), CGFloat(), CGFloat())
+        color.getRed(&t.0, green: &t.1, blue: &t.2, alpha: &t.3)
+        return t
+    }
 }
 
 extension Color: Codable {
@@ -58,10 +64,10 @@ extension Color: Codable {
     }
 
     public func encode(to encoder: Encoder) throws {
-        guard let colorComponents = self.colorComponents else {
-            return
-        }
-        
+//        guard let colorComponents = self.colorComponents else {
+//            return
+//        }
+        let colorComponents = self.rgba
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(colorComponents.red, forKey: .red)

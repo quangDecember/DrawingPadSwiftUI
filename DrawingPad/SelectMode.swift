@@ -11,5 +11,5 @@ import Foundation
 enum SelectMode: CaseIterable {
     case cut
     case copy
-    case multipleSelect
+    //case multipleSelect
 }
