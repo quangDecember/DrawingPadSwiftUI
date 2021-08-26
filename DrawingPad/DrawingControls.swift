@@ -13,7 +13,6 @@ struct DrawingControls: View {
     @Binding var drawings: [Drawing]
     @Binding var lineWidth: CGFloat
     @Binding var drawMode: DrawMode
-    @State var internalDrawMode = DrawMode.freeStyle
     @State private var colorPickerShown = false
     @Binding var draggingElement: Bool
     @Binding var selectMode: SelectMode
