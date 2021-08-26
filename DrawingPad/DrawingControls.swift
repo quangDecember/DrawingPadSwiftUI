@@ -21,7 +21,7 @@ struct DrawingControls: View {
     private let spacing: CGFloat = 40
     
     var body: some View {
-        NavigationView {
+        // Navigation View + 1 menu for 1 toolbar item?
             VStack {
                 HStack(spacing: spacing) {
                     Button("Pick color") {
@@ -90,7 +90,7 @@ struct DrawingControls: View {
                     }
                 })
             }
-        }
+        
         .frame(height: 200)
         .sheet(isPresented: $colorPickerShown, onDismiss: {
             self.colorPickerShown = false
